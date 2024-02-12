@@ -17,4 +17,5 @@ function combineArray (first, second) {
 
 }
 
+
 resultElement.innerText = combineArray (firstArray, secondArray);
