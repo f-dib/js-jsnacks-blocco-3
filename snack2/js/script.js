@@ -1,11 +1,10 @@
 let resultElement = document.querySelector("#result");
+let titleElement = document.querySelector("#text");
 let result = [];
 let firstArray = [1, 2, 3, 4, 5];
 let secondArray = ["a", "b", "c", "d", "e"];
 
-console.log(firstArray);
-console.log(secondArray);
-
+// Creo un ciclo che prende gli elementi presenti nei due array e li concateni
 
 function combineArray (first, second) {
 
@@ -17,5 +16,6 @@ function combineArray (first, second) {
 
 }
 
-
+// Mostro a schermo i valori ottenuti
+titleElement.innerHTML = "L'unione dei due array risulta";
 resultElement.innerText = combineArray (firstArray, secondArray);

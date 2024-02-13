@@ -1,6 +1,8 @@
 let wordElement = String(prompt('Inserisci una parola o una frase'));
 let resultElement = document.querySelector("#result");
+let titleElement = document.querySelector("#text");
 
+// Trasforma tutte le prime lettere in maiuscole
 function upperWord (word) {
 
     let arrayText = word.split(' ');
@@ -12,6 +14,8 @@ function upperWord (word) {
     let firstUpper = arrayText.join(' ');
 
     return firstUpper;
+
 }
 
+titleElement.innerHTML = "Il tuo testo e':";
 resultElement.innerHTML = upperWord (wordElement);
